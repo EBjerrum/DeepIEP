@@ -1,6 +1,8 @@
 
 # DeepIEP: Isoelectric Point (IEP/pI) of peptides using Recurrent Neural Networks (RNNs)
 
+![DeepIEP Logo](DeepIEP_rendering.png)
+
 DeepIEP is a data-driven model of the isoelectric point of denatured peptides. It predicts based on a recurrent neural network that was trained on a dataset of peptides with literature pI values associated. The recurrent neural network reads the peptide in standard one letter notation, one letter at a time, and at the end of reading, outputs the predicted pI.
     In this version it can predict peptides up to 49 letters long because it runs in batch mode, but the weights could be transferred to a stateful model and used to predict longer sequences. 
     It supports a single modification, cyscam, of cysteines, either by setting a switch on the model, or substituting cysteines "C" with "Z" before prediction.
@@ -190,3 +192,8 @@ Bjerrum, E.J., 2017. DeepIEP: a Peptide Sequence Model of Isoelectric Point (IEP
 ## Commercial Support
 
 Commercial support is available from [Wildcard Pharmaceutical Consulting](https://www.wildcardconsulting.dk)
+
+
+```python
+
+```
